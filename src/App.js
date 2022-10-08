@@ -1,5 +1,11 @@
+import Scoreboard from "./components/ScoreBoard";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Scoreboard />
+    </>
+  );
 }
 
 export default App;
