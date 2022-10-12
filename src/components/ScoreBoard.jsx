@@ -9,14 +9,15 @@ export default function Scoreboard() {
 
   function handlePlusClick() {
     member.score++;
+    setMember(member);
   }
 
-  function handleFirstNameChange(e) {
+  function handleNameChange(e) {
     member.name = e.target.value;
     setMember(member);
   }
 
-  function handleLastNameChange(e) {
+  function handleBirthOfNameChange(e) {
     member.birthOfName = e.target.value;
     setMember(member);
   }
@@ -29,11 +30,11 @@ export default function Scoreboard() {
       </label>
       <label>
         이름:
-        <input value={member.name} onChange={handleFirstNameChange} />
+        <input value={member.name} onChange={handleNameChange} />
       </label>
       <label>
         본명:
-        <input value={member.birthOfName} onChange={handleLastNameChange} />
+        <input value={member.birthOfName} onChange={handleBirthOfNameChange} />
       </label>
     </>
   );
